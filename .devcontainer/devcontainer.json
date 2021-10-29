@@ -1,0 +1,25 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json
+{
+  "name": "Hackbright Remote Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "hackbrightcontainer",
+  "workspaceFolder": "/home/hackbright/src",
+  "remoteUser": "hackbright",
+  // VS Code settings
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "workbench.colorCustomizations": {
+      "activityBar.foreground": "#e03739",
+      "activityBar.background": "#e0e0e0",
+      "statusBarItem.remoteBackground": "#e03739",
+      "statusBar.background": "#27282e"
+    },
+    "editor.formatOnSave": false,
+    "python.pythonPath": "/usr/bin/python3",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
+    "python.languageServer": "None"
+  },
+  "extensions": ["ms-python.python", "dbaeumer.vscode-eslint", "ms-vsliveshare.vsliveshare"]
+}

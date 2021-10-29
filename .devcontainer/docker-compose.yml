@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hackbrightcontainer:
+    build: .
+    tty: true
+    ports:
+      - 5000:5000
+      - 5432:5432
+    volumes:
+      - ../src:/home/hackbright/src
+      - postgres-data:/var/lib/postgresql/data
+      - home:/home/
+volumes:
+  postgres-data:
+  home:
